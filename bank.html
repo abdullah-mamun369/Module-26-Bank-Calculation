@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Calculation</title>
+    <!-- Tailwind added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="my-12">
+        <h1 class="text-4xl font-medium text-center text-blue-800"> Welcome to <br>
+            <span class="text-5xl font-bold">Your Bank Dashboard</span> </h1>
+    </header>
+
+    <section>
+        <div class="grid lg:grid-cols-3 gap-4 w-9/12 mx-auto">
+            <div class="bg-blue-900 p-10 rounded-2xl">
+                <h4 class="text-white text-2xl ">Deposite</h4>
+                <h2 class="text-white text-5xl">$<span id="current-deposite">00</span></h1>
+            </div>
+            <div class="bg-yellow-500 p-10 rounded-2xl">
+                <h4 class="text-white text-2xl">Withdraw</h4>
+                <h2 class="text-white text-5xl">$<span id="current-withdraw">00</span></h1>
+            </div>
+            <div class="bg-purple-600 p-10 rounded-2xl">
+                <h4 class="text-white text-2xl">Balance</h4>
+                <h2 class="text-white text-5xl">$<span id="current-balance">1200</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-20 mb-11">
+        <div class="grid lg:grid-cols-2 gap-4 w-9/12 mx-auto">
+            <div class="bg-fuchsia-700 p-10 rounded-2xl">
+                <h4 class="text-white text-3xl font-medium">Please Deposite</h4>
+                <input class="block mb-3 p-2 rounded-lg text-lg w-9/12 my-4" id="deposite-input" type="email" placeholder="Please enter your deposite ammount">
+                <button class="text-white block bg-yellow-500 py-2 px-6 rounded-lg text-xl font-medium hover:bg-green-600 hover:text-white" id="deposite-btn">Deposite</button>
+            </div>
+            <div class="bg-green-700 p-10 rounded-2xl">
+                <h4 class="text-white text-3xl font-medium">Please Withdraw</h4>
+                <input class="block mb-3 p-2 rounded-lg text-lg w-9/12 my-4" id="withdraw-input" type="email" placeholder="Please enter your withdraw ammount">
+                <button class="text-white block bg-yellow-500 py-2 px-6 rounded-lg text-xl font-medium hover:bg-fuchsia-600 hover:text-white" id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS file added -->
+    <script src="js/home-bank.js"></script>
+</body>
+</html>
